@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No te triste</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon" >
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <h2 id="text">No te triste</h2>
+
+    </section>
+    <div id="container">
+        <div class="column">
+            <img src="1.jpg" class="imagen">
+            <img src="2.jpg" class="imagen">
+            <img src="3.jpg" class="imagen">
+            <img src="4.jpg" class="imagen">
+            <img src="12.jpg" class="imagen">
+        </div>
+        <div class="column">
+            <img src="6.jpg" class="imagen">
+            <img src="7.jpg" class="imagen">
+            <img src="8.jpg" class="imagen">
+            <img src="9.jpg" class="imagen">
+            <img src="10.jpg" class="imagen">
+        </div>
+        <div class="column">
+            <img src="11.jpg" class="imagen">
+            <img src="13.jpg" class="imagen">
+            <img src="14.jpg" class="imagen">
+            <img src="5.jpg" class="imagen">
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg")
+        let moon = document.getElementById("moon")
+        let mountain = document.getElementById("mountain")
+        let road = document.getElementById("road")
+        let text = document.getElementById("text")
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            // text.style.top = value * 1 + 'px';
+        })
+    </script>
+</body>
+</html>
