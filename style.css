@@ -60,7 +60,7 @@ section img{
 #text{
     position: relative;
     color: #fff;
-    font-size: 10em;
+    font-size: 10vw;
     z-index: 1;
 }
 
